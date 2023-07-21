@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .ativo{
+        color: blueviolet;
+        font-weight: 600;
+        font-size: 100px;
+        text-decoration: none;
+
+    }
+</style>
+<body>
+
+    <a href="#" class="btn">Clique aqui!</a>
+    <script>
+        // Crie um objeto com os seus dados pessoais
+        // Deve possui pelo menos duas propriedades nome e sobrenome
+
+        var pessoa = {
+            nome: "Brenda",
+            sobrenome: "Costa",
+            profissao: "Analista de Sistema",
+
+        }
+
+        // Crie um método no objeto anterior, que mostre o seu nome completo
+
+        pessoa.nomecompleto = function (){
+            return `${this.nome} ${this.sobrenome}`
+        }
+
+        // // Modifique o valor da propriedade preco para 3000
+         var carro = {
+         preco: 1000,
+         portas: 4,
+         marca: 'Audi',
+         }
+
+         carro.preco = 3000
+
+        // // Crie um objeto de um cachorro que represente um labrador,
+        // // preto com 10 anos, que late ao ver um homem
+            var cachorro = {
+                raca: 'labrador',
+                cor: 'preto',
+                idade: 10,
+                latir(pessoa){
+                    if(pessoa == 'homem'){
+                        console.log("auauauauaua")
+                    }else{
+                        console.log("calado")
+                    }
+                }
+                
+            }
+
+            var btn = document.querySelector('.btn')
+            btn.classList.add('.ativo')
+            btn.addEventListener('click', ()=>{
+                console.log("clicou")
+            })
+
+
+           let copa = ["1959", "1962", "1970", "1994", "2002"]
+           console.log(copa)
+           
+           copa.forEach(function(anos){
+            console.log(`O Brasil ganhou as copas de ${anos}`)
+           })
+
+           console.log(`------------------`)
+
+           for(let i = 0; i < copa.length; i++){
+            console.log(`O Brasil ganhou as copas de ${copa[i]}`)
+           }
+           console.log(`------------------`)
+
+           let frutas = ['Banana', 'Maça', 'Pera', 'Uva', 'Melãncia']
+
+           for(let fruta = 0; fruta < frutas.length; fruta++){
+            if(frutas[fruta] == "Pera"){
+                console.log("Achei")
+                break
+            }
+           }
+
+
+           let ultima = frutas.slice(-1)
+           console.log(`Eu sou a ultima fruta do array ${ultima}!`)
+
+           let ultimaFruta = frutas[frutas.length - 1]
+           console.log(`A ultima fruta do array ${ultimaFruta}`)
+
+    </script>
+    
+</body>
+</html>

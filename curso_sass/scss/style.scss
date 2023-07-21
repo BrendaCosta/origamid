@@ -1,0 +1,13 @@
+$preto: #1d1d1d;
+$cinza: #c3c3c3;
+
+div {
+  background: $preto;
+  height: 200px;
+  width: 650px;
+
+  a{
+    color: $cinza;
+    font-size: 2rem;
+  }
+}

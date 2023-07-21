@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const agora = new Date();
+        const promocao = new Date('December 24 2022 23:59')
+
+        function converterEmDias(time){
+            return time / (24 * 60 * 60 *1000)
+        }
+
+        const diasAgora = converterEmDias(agora)
+        const diasPromocao = converterEmDias(promocao)
+
+        const faltam = diasPromocao - diasAgora;
+
+        console.log(faltam)
+    </script>
+</body>
+</html>

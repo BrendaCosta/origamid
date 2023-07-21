@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+
+        function areaQuadrado(lado){
+            var area = lado * lado
+
+            console.log( area)
+        }
+        areaQuadrado(5)
+
+
+        function imc(peso, altura){
+            var imc = peso /(altura * altura)
+
+            if (imc <= 18.4){
+                console.log(`Seu imc é ${imc} portando você ta abaixo do peso`)
+            }if (imc >= 18.5 && imc <= 24.9){
+                console.log(`Seu imc é ${imc} portando você ta no peso normal`)
+            }if (imc >= 25 && imc <= 29.9){
+                console.log(`Seu imc é ${imc} portando você ta acima do peso`)
+            }if (imc >= 30){
+                console.log(`Seu imc é ${imc} portando você ta obeso`)
+            }
+        }
+
+        console.log(imc(93,1.56));
+
+
+    </script>
+    
+</body>
+</html>

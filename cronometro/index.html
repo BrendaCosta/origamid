@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronometro</title>
+</head>
+<body>
+    <style>
+         body{
+           /*background-color: blue;*/
+           height: 100vh;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+
+        }
+        /*
+        body.active{
+            background-color: red;
+        } */
+        .timer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #ccc;
+            border-radius: 100%;
+            width: 250px;
+            height: 250px;
+        }
+        .tempo{
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+        button{
+            height: 40px;
+            border: none;
+            width: 80px;
+            background: rgb(186, 49, 232);
+            color: #fff;
+            font-weight: 600;
+            text-transform: uppercase;
+            border-radius: 8px;
+          
+        }
+
+        button:disabled{
+            background-color: #ccc;
+            color: #000;
+        }
+       
+
+    </style>
+    <div class="timer">
+        <span class="tempo">0</span>
+
+        <div class="btn">
+            <button class="iniciar">Iniciar</button>
+            <button class="pausar">Pausar</button>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
